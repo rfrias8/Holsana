@@ -1,5 +1,5 @@
 body {
-    background-color: #121528;;
+    background-color: #121528;
 }
 
 .container {
@@ -7,6 +7,15 @@ body {
     max-width: auto;
     max-height: auto;
     background-color:whitesmoke;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-text {
+    color: #e3fafa; 
+    font-size: 20px;
 }
 
 .card-deck {
@@ -43,4 +52,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: whitesmoke;
+}
+
+#contact {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 10 auto; 
 }
