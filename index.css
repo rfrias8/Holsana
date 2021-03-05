@@ -2,11 +2,12 @@ body {
     background-color: #121528;
 }
 
-.container {
+.container-fluid {
     display: grid;
     max-width: auto;
     max-height: auto;
-    background-color:whitesmoke;
+    background-color: #121528;
+    padding:0%;
 }
 
 .nav-link {
@@ -28,8 +29,16 @@ body {
 .topnav-right {
     float: right;
 }
+
+.card-body {
+    text-align: center;
+}
+
 .card {
-    background-color: whitesmoke;
+    background-color: #121528;
+    color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 .center {
     display: block;
@@ -39,11 +48,38 @@ body {
 }
 
 .main-picture {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
+
+.d-block {
+    width: 100%;
+    height: auto;
+}
+
+.bottle {
+    width: 300px;
+    margin: auto;
+}
+
+.carousel-inner  {
+    width: 500px;
+    margin: auto;
+}
+ 
+.carousel-caption{
+    color: white;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+.list {
+    text-align:left;
+}
 .card-img-top {
     border-radius: 50%;
     height: 150px;
@@ -59,4 +95,12 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     margin: 10 auto; 
+}
+
+footer {
+  text-align: right;
+  padding: 10px;
+  padding-right: 100px;
+  background-color: #121528;
+  color: white;
 }
