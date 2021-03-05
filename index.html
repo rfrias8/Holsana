@@ -4,24 +4,49 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Hello, world!</title>
+    <title>Personalized, plant medicine to help you sleep.</title>
   </head>
+  
   <body>
-    <div class="container">
-        <img src="Holsana Logo.png" alt="Holsana Logo" class="center">
-    <div class="topnav-right">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-    </div>
-        <img src="Holsana-good-sleep.jpg" alt="Holsana Logo" class="main-picture">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="Holsana Logo Horiz.png" height="40" alt="Horizontal Holsana Logo">
+        </a>
+      </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <span class="navbar-text" >
+          Personalized, plant medicine to help you sleep.
+        </span>
+      </div>
+    </nav>
+
+    <img src="Holsana-good-sleep.jpg" alt="Holsana Logo" class="main-picture">
     
-    <div class="card-deck">
+    <div class="card-deck" id="features">
         <!-- card 1 -->
         <div class="card">
           <img class="card-img-top" src="for-you.png" alt="Card image cap">
@@ -60,7 +85,45 @@
         </div>
     </div>
     </div>
-    
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="d-flex justify-content-center">
+        <h2 style="color: white">Get In Touch</h2>
+        
+      </div>
+      <br>
+      <div class="d-flex justify-content-center" style="color: white">
+        <p>Sign up for our newsletter to receive special pre-launch offers and to learn more about the science behind Holsana’s supplements.</p>
+      </div>
+
+      <!-- Form -->
+      <div class="d-flex justify-content-center">
+      <form>
+        <div class="form-row d-flex justify-content-center">
+        <div class="form-group col-md-10">
+          
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="form-group col-md-4">
+            
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-4">
+            
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Full Name">
+          </div>
+          <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-primary ">Submit</button>
+          </div>
+        </div>
+        
+        
+        </div>
+      </form>
+  </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
