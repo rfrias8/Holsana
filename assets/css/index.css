@@ -1,0 +1,923 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121528;
+}
+/*font-family: "avertaregular", sans-serif !important;*/
+p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.01em;
+  }
+  
+.container-fluid {
+    display: grid;
+    max-width: auto;
+    max-height: auto;
+    background-color: #121528;
+    padding:0%;
+}
+
+/* navigation */
+/* CSS Document */
+.toggle-2,
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+#logo a {
+    float: left;
+    display: initial;
+    font-weight: 600;
+    font-size: 35px;
+    color: #719cfe;
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    /* float: right; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+/* Styling the links */
+nav a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 12px;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    color: #000;
+    opacity: .8;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 26px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    z-index: 9;
+    /* has to be the same number as the "line-height" of "nav a" */
+	-webkit-box-shadow: 0px -1px 5px 0px rgba(143,143,143,0.72);
+-moz-box-shadow: 0px -1px 5px 0px rgba(143,143,143,0.72);
+box-shadow: 0px -1px 5px 0px rgba(143,143,143,0.72);
+}
+
+nav ul ul li a:hover {
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li>a:only-child:after {
+    content: '';
+}
+
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-text {
+    color: #e3fafa  !important;; 
+    font-size: 20px  !important;;
+}
+.navbar-text-promo {
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+    color:#fff;
+}
+
+.card-deck {
+    width: 1000px;
+    margin: 0 auto; 
+    float: none 
+
+}
+
+.topnav-right {
+    float: right;
+}
+
+/* navigation */
+/* CSS Document */
+.toggle-2,
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #121528;
+    color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card .card-body .card-text{
+    text-align: center;
+}
+
+.card .card-body .card-title {
+    min-height: 60px !important;
+    max-height: 100%;
+}
+.center {
+    display: block;
+    margin-left: 5rem;
+    margin-right: auto;
+    width: 10%;
+}
+
+.main-picture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.d-block {
+    width: 100%;
+    height: auto;
+}
+
+
+.carousel-inner  {
+    width: 800px;
+    margin: auto;
+}
+ 
+.carousel-caption{
+    color: white;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+.list {
+    text-align:left;
+    font-size: 25px;
+}
+.card-img-top {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+} 
+#contact {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 10 auto; 
+}
+
+.d-flex {
+    background-color: #196177;
+    width: 100%;
+    height: auto;
+}
+
+.product-section {
+    background-color: white;
+}
+
+.contact-header {
+    color: white;
+    font-size: 50px;
+}
+
+.product-header {
+    color:black;
+    font-size: 50px;
+}
+
+.img-fluid {
+    width: 500px;
+    margin: auto;
+}
+
+.quiz-header {
+    color: white;
+    font-size: 50px;
+}
+
+.quiz-text {
+    color: white;
+    font-size: 20px;
+}
+
+.quiz-btn-container {
+    padding-top: 200px;
+}
+
+.quiz-btn {
+    width: 100%;
+    outline: none;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #fff;
+    background: #719cfe;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.benefit-text {
+    color: black;
+    padding-top: 100px;
+}
+
+.contact {
+    background-color: #06475f;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.contact_grid_right input[type="text"],
+.contact_grid_right input[type="email"],
+.contact_grid_right textarea {
+    outline: none;
+    padding: 15px 15px;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+.contact_grid_right textarea {
+    min-height: 110px;
+    resize: none;
+    width: 100%;
+}
+
+.contact_grid_right button {
+    outline: none;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #fff;
+    background: #719cfe;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer {
+  text-align: right;
+  padding: 10px;
+  padding-right: 100px;
+  background-color: #121528;
+  color: white;
+}
+.hero_image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  color: black;
+  -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  font-size: 100px;
+}
+footer{
+    background-color:#000;
+}
+footer span p a{
+    margin: 0px 4px;
+    opacity: 0.45;
+    color:#fff !important;
+}
+
+footer span p a:hover{
+    opacity: 0.95;
+    color:#fff !important;
+}
+
+
+.error{
+    color: red;
+}
+
+
+/* bottom-to-top */
+a.move-top {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 0;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+a.move-top span {
+    color: #000;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+/*Transition*/ 
+  /*code sample from here*/
+  .tagline {
+        top:150px;
+        position: absolute;
+        float: left;
+  }
+  .tagline p {
+    margin: 0;
+    padding: 0;
+    font-size: 7rem;
+    line-height: 1;
+    letter-spacing: 0.3rem;
+    color: #222;
+  }
+  .tagline .desc {
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    opacity: 0;
+    transition: 1s 1.5s;
+  }
+  
+ 
+  .tagline .ex1 {
+    opacity: 0;
+  }
+  .tagline .ex1 span {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+  }
+  
+  .tagline .ex2 {
+    opacity: 0;
+  }
+  .tagline .ex2 span {
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+/* responsive */
+@media(max-width: 1680px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 1600px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 1440px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 1366px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 1280px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 1080px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+@media all and (max-width : 991px) {
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        padding: 7px 12px;
+        font-size: 15px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        background-color: #eee;
+        color: #000;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -moz-border-radius: 4px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+        cursor: pointer;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        max-width: 115px;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 2px;
+        background: transparent;
+        color: #000;
+    }
+
+    .toggle:hover {
+        opacity: .8;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked+ul {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul li a {
+        letter-spacing: 2px;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+
+    .menu li.active a,
+    .menu li a:hover {
+        opacity: .8;
+    }
+
+    nav a {
+        font-size: 14px;
+        display: block;
+        margin: 8px 0;
+    }
+
+    a.reqe-button {
+        padding: 12px 20px;
+        font-size: 13px;
+        margin: 0 8px;
+    }
+
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 900px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 800px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+}
+
+@media(max-width: 736px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 667px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 640px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 600px) {
+    .container-fluid{
+        width:595px !important;
+        padding: 0;
+        margin: 0;
+    }
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+}
+
+@media(max-width: 568px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 480px) {
+    .card-body {
+        width: 95% !important;
+        
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 440px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+        
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+        
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 414px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 384px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 375px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
+
+@media(max-width: 320px) {
+    .card-body {
+        width: 95% !important;
+        font-size: 15px;
+    }
+    .card .card-body .card-text {
+        width:99% !important;
+    }
+    footer {
+        text-align: right;
+        background-color: #121528;
+        color: white;
+    }
+}
