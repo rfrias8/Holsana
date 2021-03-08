@@ -48,9 +48,20 @@ body {
 }
 
 .main-picture {
+    
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.blue-wave{
+    position:absolute;
+    bottom: -270px;
+    left: 0;
+    z-index: 3;
 }
 
 
