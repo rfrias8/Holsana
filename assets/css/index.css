@@ -921,3 +921,8 @@ a.move-top span {
         color: white;
     }
 }
+
+.hideme
+{
+    opacity:0;
+}
