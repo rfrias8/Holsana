@@ -161,12 +161,73 @@ li>a:only-child:after {
     color:#fff;
 }
 
-.card-deck {
+/* TEST CARDS */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+}
+
+.card {
+    position: relative;
+    background: #121528;
+    max-width: 300px;
+    height: 300px;
+    margin: 30px 10px;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    height: 300px;
+}
+
+.image-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -60px;
+    left: 50px;
+    z-index: 1;
+}
+
+.image-circle img{
+    max-width: 100%;
+    border-radius: 4px;
+    padding-top: 30px;
+}
+
+.content {
+    position: relative;
+    margin-top: -150px;
+    padding: 15px 15px;
+    color:white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+/* original card */
+/* .card-deck {
     width: 1000px;
     margin: 0 auto; 
+    margin-top: 20px;
     float: none 
 
-}
+} */
 
 .topnav-right {
     float: right;
@@ -186,14 +247,15 @@ nav {
     padding: 0;
 }
 
-.card {
+/* .card {
     background-color: #121528;
     color: white;
     padding-top: 75px;
     padding-bottom: 75px;
-}
+} */
 
-.card-body {
+
+/* .card-body {
     text-align: center;
 }
 
@@ -204,7 +266,7 @@ nav {
 .card .card-body .card-title {
     min-height: 60px !important;
     max-height: 100%;
-}
+} */
 .center {
     display: block;
     margin-left: 5rem;
@@ -213,9 +275,20 @@ nav {
 }
 
 .main-picture {
+    
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+}
+.blue-wave{
+    position:absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 2;
 }
 
 
