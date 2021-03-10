@@ -130,20 +130,11 @@ a:hover {
 }
 
 .main-picture {
-    
     width: 100%;
     height: auto;
     margin-bottom: 0px;
     position: relative;
-    top: 10px;
-    left: 10px;
     z-index: 0;
-}
-.blue-wave{
-    position:absolute;
-    bottom: -10px;
-    left: 0;
-    z-index: 2;
 }
 
 
@@ -317,9 +308,16 @@ footer {
   color: white;
 }
 .hero_image {
-  position: relative;
-  text-align: center;
-  color: white;
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.blue_wave {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 h1 {
