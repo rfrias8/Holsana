@@ -49,6 +49,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     transition: 0.3s ease-in-out;
+    border: none;
 }
 
 .card:hover {
@@ -84,8 +85,47 @@ a:hover {
 .card:hover .content{
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
+    margin-top: -15px;
     transition-delay: 0.3s;
+}
+
+.arrow-box {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    margin: 20px;
+}
+
+.arrow-box span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow-box span:nth-child(1)
+{
+    animation-delay: -0.2s;
+}
+.arrow-box span:nth-child(2)
+{
+    animation-delay: -0.4s;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%
+    {
+        opacity: 0;
+    }
 }
 
 /* original card */
@@ -96,11 +136,6 @@ a:hover {
     float: none 
 
 } */
-
-.topnav-right {
-    float: right;
-}
-  
 
 /* .card {
     background-color: #121528;
@@ -122,6 +157,11 @@ a:hover {
     min-height: 60px !important;
     max-height: 100%;
 } */
+
+.topnav-right {
+    float: right;
+}
+  
 .center {
     display: block;
     margin-left: 5rem;
