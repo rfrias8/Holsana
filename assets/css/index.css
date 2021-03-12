@@ -388,25 +388,11 @@ footer span p a:hover{
 
 
 /* bottom-to-top */
-a.move-top {
+.back-to-top {
     position: fixed;
-    bottom: 3%;
-    right: 2%;
-    z-index: 0;
-    background: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -moz-border-radius: 50%;
-}
-
-a.move-top span {
-    color: #000;
-    font-size: 26px;
-    line-height: 30px;
+    bottom: 25px;
+    right: 25px;
+    display: none;
 }
 
 /*Transition*/ 
