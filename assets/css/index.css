@@ -74,20 +74,11 @@ a:hover {
 }
 
 .main-picture {
-    
     width: 100%;
     height: auto;
     margin-bottom: 0px;
     position: relative;
-    top: 10px;
-    left: 10px;
     z-index: 0;
-}
-.blue-wave{
-    position:absolute;
-    bottom: -10px;
-    left: 0;
-    z-index: 2;
 }
 
 
@@ -262,9 +253,16 @@ footer {
   color: white;
 }
 .hero_image {
-  position: relative;
-  text-align: center;
-  color: white;
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.blue_wave {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 h1 {
@@ -295,25 +293,11 @@ footer span p a:hover{
 
 
 /* bottom-to-top */
-a.move-top {
+.back-to-top {
     position: fixed;
-    bottom: 3%;
-    right: 2%;
-    z-index: 0;
-    background: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -moz-border-radius: 50%;
-}
-
-a.move-top span {
-    color: #000;
-    font-size: 26px;
-    line-height: 30px;
+    bottom: 25px;
+    right: 25px;
+    display: none;
 }
 
 /*Transition*/ 
