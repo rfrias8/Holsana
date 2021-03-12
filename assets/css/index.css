@@ -29,123 +29,27 @@ a:hover {
     -webkit-text-decoration-skip: objects;
 }
 
-/* TEST CARDS */
-.container-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    
-}
+
+/* original card */
+.card-deck {
+    width: 1200px;
+    margin: 0 auto; 
+    margin-top: 10px;
+    float: none;
+    padding-bottom: 60px;
+
+} 
 
 .card {
-    position: relative;
-    background: #121528;
-    max-width: 300px;
-    height: 300px;
-    margin: 30px 10px;
-    padding: 40px 15px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s ease-in-out;
+    background-color: #121528;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 20px;
     border: none;
 }
 
-.card:hover {
-    height: 300px;
-}
 
-.image-circle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    top: -60px;
-    left: 50px;
-    z-index: 1;
-}
-
-.image-circle img{
-    max-width: 100%;
-    border-radius: 4px;
-    padding-top: 30px;
-}
-
-.content {
-    position: relative;
-    margin-top: -150px;
-    padding: 15px 15px;
-    color:white;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -15px;
-    transition-delay: 0.3s;
-}
-
-.arrow-box {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-    margin: 20px;
-}
-
-.arrow-box span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.arrow-box span:nth-child(1)
-{
-    animation-delay: -0.2s;
-}
-.arrow-box span:nth-child(2)
-{
-    animation-delay: -0.4s;
-}
-@keyframes animate
-{
-    0%
-    {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-    50%
-    {
-        opacity: 0;
-    }
-}
-
-/* original card */
-/* .card-deck {
-    width: 1000px;
-    margin: 0 auto; 
-    margin-top: 20px;
-    float: none 
-
-} */
-
-/* .card {
-    background-color: #121528;
-    color: white;
-    padding-top: 75px;
-    padding-bottom: 75px;
-} */
-
-
-/* .card-body {
+.card-body {
     text-align: center;
 }
 
@@ -156,7 +60,7 @@ a:hover {
 .card .card-body .card-title {
     min-height: 60px !important;
     max-height: 100%;
-} */
+} 
 
 .topnav-right {
     float: right;
@@ -181,6 +85,7 @@ a:hover {
 .d-block {
     width: 100%;
     height: auto;
+    opacity: 0.5;
 }
 
 
@@ -193,7 +98,7 @@ a:hover {
     color: white;
     position: relative;
     left: 0;
-    top: 0;
+    top: -350px;
 }
 
 
